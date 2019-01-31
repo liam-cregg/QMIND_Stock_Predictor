@@ -17,7 +17,7 @@ scaler = MinMaxScaler(feature_range=(0, 1))
 
 scaled_training = scaler.fit_transform(training_data_trimmed_df)
 
-# TODO find test data
+# TODO find test data, determine which data set to use for training
 
 # create dataframe out of scaled data so we can turn it into a csv
 scaled_training_df = pd.DataFrame(scaled_training, columns=training_data_df.columns.values)
